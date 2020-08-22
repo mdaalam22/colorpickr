@@ -12,16 +12,12 @@ function changeRange(){
 		document.getElementById('g-label').innerText = green;
 
 		if(red < 100 && blue < 100 && green <100){
-			document.getElementById('container').style.color = '#ffffff';
+			document.body.style.color = '#ffffff';
 		}
 
 		colorVal.onclick=function(){
 			colorVal.select();
 			if(document.execCommand('Copy')){
-				// document.getElementById('msg').innerText= 'Copied';
-				// setTimeout(function(){
-				// 	document.getElementById('msg').innerText= 'Click to copy';
-				// },3000)
 				Swal.fire(
 					  'Copied!',
 					  'You choose '+colorVal.value+' color',
