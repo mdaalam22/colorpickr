@@ -13,6 +13,8 @@ function changeRange(){
 
 		if(red < 100 && blue < 100 && green <100){
 			document.body.style.color = '#ffffff';
+		}else{
+			document.body.style.color = '#000000';
 		}
 
 		colorVal.onclick=function(){
